@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "laravel/framework": "5.*",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "6.2"
     },
     "autoload": {
         "psr-4": {
@@ -22,5 +22,12 @@
     },
     "license": "MIT",
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devpark\\Transfers24\\Providers\\Transfers24ServiceProvider"
+            ]
+        }
+    }
 }
